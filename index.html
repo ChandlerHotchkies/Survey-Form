@@ -1,15 +1,45 @@
 <DOCTYPE html>
 <html>
+	<link rel="stylesheet" href="styles.css"
 	<head>
-		<h1 id="Title">TITLE</h1>
-		<p id="description">Cool description. Change this later</p>
+		<h1 id="title">Survey Form</h1>
+		<p id="description">This is a survey</p>
 	</head>
 	<body>
 		<form id="survey-form">
-			<input id="name" type="text" required>Enter your name</input>
-			<input id="email" type="email" required>Enter your email</input>
-			<input id="number" type="number" required min="0 max="100 >Enter a number</input>
-			<input type="submit"></input>
+			<label id="name-label">Enter your name
+				<input id="name" type="text" placeholder="name" required></input>
+			</label>
+			<label id="email-label">Enter your email
+				<input id="email" type="email" placeholder="email@email.com" required></input>
+			</label>
+			<label id="number-label">Enter a number
+				<input id="number" type="number" placeholder ="1"required min=0 max=100 ></input>
+			</label>
+			<label id="hello-label">
+				<select id="dropdown"> Hello or goodbye?
+					<option>Hello</option>
+					<option>Bye</option>
+				</select>
+			</label>
+			<div class="radio-select">
+				<label id="cool-buttons">		
+					<input type="radio" name="cool" value="1">Cool</input>
+					<input type="radio" name="cool" value="2">Uncool</input>
+				</label>
+			</div>
+			<label>
+				<div class ="check-box">
+					<input class ="yes-no" type="checkbox" value="1">Yes</input>
+					<input class ="yes-no" type="checkbox" value="2">No</input>
+				</div>
+			</label>
+			<div> 
+			<label name="comments">Additional Comments
+				<textarea placeholder="I am freaking sweet"></textarea>
+			</label>
+			</div>
+			<input id="submit" type="submit" name="form-submit" value="Submit"></input>
 		</form>
 	</body>
 </html>
